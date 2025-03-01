@@ -6,14 +6,18 @@ import { DivGrid, FormStyle, Header } from '../styles'
 import { Loader } from '../loader/Loader'
 import "./style.css"
 import { Form } from './Form'
+import {Toaster, toast} from "react-hot-toast"
 export const ComentsPage = () => {
+
 
 
     const [form, setForm] = useState(false)
     const { getComentsQuery } = apisMutation(),
         { data, isError, isLoading } = getComentsQuery
 
-
+    const Toast = () => { 
+        toast.success("Comentario creado")
+     }
     return (
         <section className='g-maxwidth '>
             <Header>
@@ -56,8 +60,12 @@ export const ComentsPage = () => {
             </DivGrid>
             {
                 form &&
-                <Form setForm={setForm} form={form}></Form>
+                <Form setForm={setForm} Toast={Toast} form={form}></Form>
             }
+            <Toaster
+                position="bottom-center"
+                reverseOrder={false}
+            />
         </section>
     )
 }

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./style.css"
 import { CommentsType } from '@/core/interfaces/coments'
 import { apisMutation } from '@/infrastructure/api/apis-mutations'
-export const Form = ({setForm, form}: {setForm: any, form: any}) => {
+export const Form = ({setForm, form, Toast}: {setForm: any, form: any, Toast: any}) => {
 
     const [formdata, setformdata] = useState({
         id: null,
@@ -28,6 +28,8 @@ export const Form = ({setForm, form}: {setForm: any, form: any}) => {
         console.log("ingreso de data nueva")
         console.log(newData)
         postComentsMutation.mutate(newData)
+        setForm(!form)
+        Toast()
     }
 
 
