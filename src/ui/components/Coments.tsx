@@ -2,7 +2,7 @@
 import { apisMutation } from '@/infrastructure/api/apis-mutations'
 import React, { useState } from 'react'
 import { ButtonComponent } from '../reusable/Button'
-import { DivGrid, FormStyle, Header } from '../styles'
+import { DivGrid, Header } from '../styles'
 import { Loader } from '../loader/Loader'
 import "./style.css"
 import { Form } from './Form'
