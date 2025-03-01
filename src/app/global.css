@@ -1,6 +1,18 @@
-body{
-    background: #dad8d8 no-repeat;
-    background-image: radial-gradient(circle, #1988f7 -5%, #dad8d8 45%);
-    
-    height: 90vh;
+body {
+  background: #dad8d8 no-repeat;
+  background-image: radial-gradient(circle, #1988f7 -5%, #dad8d8 45%);
+  background-attachment: scroll ;
+  height: 90vh;
+}
+/* global style */
+.g-maxwidth {
+  max-width: 900px;
+  margin: auto;
+}
+.section-h1_listcoments {
+  padding: 1rem;
+}
+section > * {
+  display: flex;
+  justify-content: center;
 }
