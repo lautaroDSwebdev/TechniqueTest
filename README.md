@@ -3,11 +3,17 @@
 # Tecnologias: [![My Skills](https://skillicons.dev/icons?i=typescript,next,styledcomponents,css)](https://skillicons.dev)
 ## + Zustand
 
+## Web de la prueba tecnica https://technique-test-cgv4-git-main-lautarodisalvocodes-projects.vercel.app/
+
 # -Pasos para bajar proyecto y ejecutarlo-
 
 ## 1: npm install
 ## 2: abre doble terminal para la app y la fake api
 ## 3: ejecuta la app y en la segunda terminal (fake api) escribe npm run api y se activa la api falsa
+
+## Gestion de estado: Como gestor de estado de la aplicacion preferí usar useState por que es con algo que estoy superacostumbrado de usar, zustand lo use pero contadas veces y lo quiero practicar mas a fondo para este puesto.
+
+##
 
 # Arquitectura de proyecto: screaming architecture
 ```bash
