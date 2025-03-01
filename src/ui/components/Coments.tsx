@@ -2,47 +2,29 @@
 import { apisMutation } from '@/infrastructure/api/apis-mutations'
 import React, { useState } from 'react'
 import { ButtonComponent } from '../reusable/Button'
-import { DivGrid, FormStyle, Title } from '../styles'
-import { Loader } from '../Loader/Loader'
-
+import { DivGrid, FormStyle, Header } from '../styles'
+import { Loader } from '../loader/Loader'
+import "./style.css"
+import { Form } from './Form'
 export const ComentsPage = () => {
 
-    const [formdata, setformdata] = useState({
-        postId: 0,
-        id: 0,
-        name: "",
-        email: "",
-        body: "",
-    })
-    const { postComentsMutation } = apisMutation()
+
+    const [form, setForm] = useState(false)
     const { getComentsQuery } = apisMutation(),
         { data, isError, isLoading } = getComentsQuery
-    console.log(data)
-    const [form, setForm] = useState(false)
 
-    const HandleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setformdata({
-            ...formdata,
-            [e.target.name]: e.target.value
-        })
-    }
 
-    // console.log(formdata)
-
-    const HandleSubmit = (e: any) => {
-        e.preventDefault()
-        const newData = { ...formdata, id: Date.now(), postId: Date.now() }
-        console.log(newData)
-        postComentsMutation.mutate(newData)
-    }
     return (
         <section className='g-maxwidth '>
-            <Title >
-                <h1>Lista de comentarios</h1>
-            </Title>
-            <ButtonComponent onClick={() => setForm(!form)}>Agregar comentario</ButtonComponent>
+            <Header>
+
+                <div style={{ display: "flex", justifyContent: "center" }} >
+                    <h1>Lista de comentarios</h1>
+                </div>
+                <ButtonComponent onClick={() => setForm(!form)}>Agregar comentario</ButtonComponent>
+            </Header>
             {
-                !data && isLoading || isError ?
+                !data && isLoading ?
                     <div style={{
                         display: 'flex',
                         justifyContent: "center",
@@ -62,23 +44,19 @@ export const ComentsPage = () => {
                     !isLoading && !isError &&
                     data?.map(e => (
                         <ul key={e.id}>
-                            <p>name: {e.name}</p>
-                            <p>email: {e.email}</p>
-                            <p>body: {e.body}</p>
+                            <p>{e.email}</p>
+                            <p>{e.name}</p>
+                            <p>{e.body}</p>
                         </ul>
                     ))
+                }
+                {
+                    data?.length === 0 && <ul> <p>Sin datos por ahora</p></ul>
                 }
             </DivGrid>
             {
                 form &&
-                <FormStyle>
-                    <form onSubmit={HandleSubmit} action="">
-                        <input onChange={HandleChange} value={formdata.name} name='name' placeholder='nombre' type="text" />
-                        <input onChange={HandleChange} value={formdata.email} name='email' placeholder='email' type="email" />
-                        <input onChange={HandleChange} value={formdata.body} name='body' placeholder='body' type="text" />
-                        <button type='submit'>Crear Comentario</button>
-                    </form>
-                </FormStyle>
+                <Form setForm={setForm} form={form}></Form>
             }
         </section>
     )

@@ -10,15 +10,14 @@ ul{
     justify-content:center;
     flex-flow:column;
     margin: auto;
-    background: #060af1ac;
-    width: 226px;
+    background: #353670;
+    max-width: 226px;
     border-radius:5px;
     padding:1rem;
     overflow:hidden;
-    min-height:140px;
+    height:auto;
         p{
-            /* max-width: 180px; */
-            color: #fff;
+            color: #c1d2ef;
             font-weight: 400;
         }
     }

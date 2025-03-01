@@ -1,6 +1,6 @@
 import { useMutation, useQuery , useQueryClient} from "@tanstack/react-query"
 import { getComents, postComents } from "@/core/use-cases/coments-use-cases"
-import { ComentsType } from "@/core/interfaces/coments"
+import { CommentsType } from "@/core/interfaces/coments"
 
 
 export const apisMutation = () => {
@@ -13,7 +13,7 @@ export const apisMutation = () => {
 
     const postComentsMutation = useMutation({
         mutationKey: ["coments"],
-        mutationFn:(data: ComentsType) => {
+        mutationFn:(data: CommentsType) => {
             return postComents(data)
         }, 
         onSuccess: () => {

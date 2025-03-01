@@ -1,18 +1,14 @@
 body {
-  background: #dad8d8 no-repeat;
-  background-image: radial-gradient(circle, #1988f7 -5%, #dad8d8 45%);
-  background-attachment: scroll ;
+  background: #000 no-repeat;
+  background-image: radial-gradient(circle, #1b1e93 14%, #000 68%);
+  background-attachment: fixed ;
+  background-position-y: 7rem;
   height: 90vh;
+  scrollbar-color: #6562e7 #000;
 }
+
 /* global style */
 .g-maxwidth {
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
-}
-.section-h1_listcoments {
-  padding: 1rem;
-}
-section > * {
-  display: flex;
-  justify-content: center;
 }

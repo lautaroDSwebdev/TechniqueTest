@@ -8,4 +8,6 @@ cursor: pointer;
 display:flex;
 justify-content:center;
 width:fit-content;
+background:#353670;
+color:#fff;
 `
