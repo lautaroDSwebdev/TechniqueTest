@@ -5,7 +5,7 @@
 
 ## Web de la prueba tecnica https://technique-test-cgv4-git-main-lautarodisalvocodes-projects.vercel.app/
 
-# -Pasos para bajar proyecto y ejecutarlo-
+# -Pasos para bajar proyecto y ejecutarlo debido a que no pude usar json place holder para las solicitudes post-
 
 ## 1: npm install
 ## 2: abre doble terminal para la app y la fake api
