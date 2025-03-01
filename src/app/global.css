@@ -1,6 +1,6 @@
 body {
-  background: #000 no-repeat;
-  background-image: radial-gradient(circle, #1b1e93 14%, #000 68%);
+  background: #202020 no-repeat;
+  background-image: radial-gradient(circle, #1b1e93 10%, #202020 38%);
   background-attachment: fixed ;
   background-position-y: 7rem;
   height: 90vh;
