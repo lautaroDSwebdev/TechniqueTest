@@ -8,6 +8,8 @@
 ## 1: npm install
 ## 2: abre doble terminal para la app y la fake api
 ## 3: ejecuta la app y en la segunda terminal (fake api) escribe npm run api y se activa la api falsa
+
+# Arquitectura de proyecto: screaming architecture
 ```bash
 /src
 ├── /app                    
