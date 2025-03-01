@@ -1,6 +1,6 @@
-Prueba tecnica
+# Prueba tecnica
 
-Tecnologias: [![My Skills](https://skillicons.dev/icons?i=typescript,next,stylescomponents)](https://skillicons.dev)
+# Tecnologias: [![My Skills](https://skillicons.dev/icons?i=typescript,next,react-query)](https://skillicons.dev)
 ## Getting Started
 
 First, run the development server:
