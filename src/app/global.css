@@ -1,0 +1,6 @@
+body{
+    background: #dad8d8 no-repeat;
+    background-image: radial-gradient(circle, #1988f7 -5%, #dad8d8 45%);
+    
+    height: 90vh;
+}
