@@ -1,6 +1,6 @@
 # Prueba tecnica
 
-# Tecnologias: [![My Skills](https://skillicons.dev/icons?i=typescript,next,styledcomponents,css)](https://skillicons.dev)
+# Tecnologias: [![My Skills](https://skillicons.dev/icons?i=typescript,next,styledcomponents,css,zustand)](https://skillicons.dev)
 
 ```bash
 /src
