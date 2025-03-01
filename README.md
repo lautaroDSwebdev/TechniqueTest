@@ -4,17 +4,17 @@
 
 ```bash
 /src
-├── /app                     # Rutas y páginas en Next.js (app router)
+├── /app                    
 │    ├── layout.tsx
 │    ├── page.tsx
 │    └── globals.css
 │
-├── /core                     # Lógica central del negocio (dominio)
-│    ├── /entities            # Entidades del dominio (Ej: User, Product, Order)
+├── /core                    
+│    ├── /entities            
 │    │    ├── User.ts
 │    │    ├── Product.ts
 │    │    └── Order.ts
-│    ├── /use-cases           # Casos de uso (Ej: RegisterUser, GetProducts)
+│    ├── /use-cases           
 │    │    ├── peticiones con axios
 │    └── /errors              # Manejo de errores personalizados
 │         ├── manejo de errores
@@ -24,18 +24,14 @@
 │    ├── /utils               # Utilidades y helpers
 │    │    ├── helpers
 │    └── /config              # Configuración global del proyecto
-│         ├── appConfig.ts
-│         ├── env.ts
-│         └── logger.ts
-│
+│ 
 ├── /ui                       # Componentes de UI (framework-agnostic)
 │    ├── /components          # Componentes reutilizables (Ej: Button, Modal)
 │    │    ├── Button.tsx
 │    │    ├── Modal.tsx
 │    │    └── Card.tsx
 │    ├── /layouts             # Layouts de la app
-│    │    ├── DashboardLayout.tsx
-│    │    └── AuthLayout.tsx
+│    
 │    ├── /hooks               # Custom hooks
 │    │    ├── useAuth.ts
 │    │    ├── useTheme.ts
