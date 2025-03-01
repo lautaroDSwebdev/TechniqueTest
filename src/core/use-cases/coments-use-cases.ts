@@ -5,7 +5,6 @@ const api = axios.create({
     baseURL: "http://localhost:5000/"
     // baseURL: "https://jsonplaceholder.typicode.com/"
 })
-// https://jsonplaceholder.typicode.com/
 
 export const getComents = async () => {
     const req = await api.get<CommentsType[] >("comments")
