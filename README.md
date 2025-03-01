@@ -16,28 +16,27 @@
 │    │    └── Order.ts
 │    ├── /use-cases           
 │    │    ├── peticiones con axios
+│    ├── /interfaces           
+│    │    ├── interfaces de TS
 │    └── /errors              # Manejo de errores personalizados
 │         ├── manejo de errores
-├── /infra                    # Implementación de la infraestructura (adaptadores)
-│    ├── /api                 # API REST/GraphQL handlers
+├── /infrascructure                    # Implementación de la infraestructura (adaptadores)
+│    ├── /apis-mutations           
 │    │    ├── manejo de peticiones con axios y react query
-│    ├── /utils               # Utilidades y helpers
-│    │    ├── helpers
-│    └── /config              # Configuración global del proyecto
-│ 
 ├── /ui                       # Componentes de UI (framework-agnostic)
 │    ├── /components          # Componentes reutilizables (Ej: Button, Modal)
 │    │    ├── Button.tsx
 │    │    ├── Modal.tsx
 │    │    └── Card.tsx
-│    ├── /layouts             # Layouts de la app
-│    
+│    ├── /layouts             # Layouts de la app    
 │    ├── /hooks               # Custom hooks
 │    │    ├── useAuth.ts
 │    │    ├── useTheme.ts
 │    │    └── useFetch.ts
 │    ├── /rousable             # Layouts de la app
 │    │    ├── componentes reutilizables
+│    ├── /loader             # Layouts de la app
+│    │    ├── componente para activar cuando se espera la respuesta de la api
 │    └── /styles             
 │          ├── estilos de styled components
 ├── package.json
