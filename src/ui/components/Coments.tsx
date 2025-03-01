@@ -4,9 +4,9 @@ import React, { useState } from 'react'
 import { ButtonComponent } from '../reusable/Button'
 import { DivGrid, Header } from '../styles'
 import { Loader } from '../loader/Loader'
-import "./style.css"
 import { Form } from './Form'
 import {Toaster, toast} from "react-hot-toast"
+import "./style.css"
 export const ComentsPage = () => {
 
 
@@ -36,7 +36,7 @@ export const ComentsPage = () => {
                         paddingTop: "2rem",
                         height: "60vh"
                     }}>
-                        <Loader></Loader>
+                        <Loader/>
                     </div>
                     : ""
             }
