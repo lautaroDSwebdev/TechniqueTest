@@ -1,11 +1,10 @@
 "use client"
 import { apisMutation } from '@/infrastructure/api/apis-mutations'
 import React, { useState } from 'react'
-import { ButtonComponent } from '../reusable/Button'
+import { ButtonComponent, } from '../reusable/Button'
 import { DivGrid, Header } from '../styles'
-import { Loader } from '../loader/Loader'
-import { Form } from './Form'
-import {Toaster, toast} from "react-hot-toast"
+import { Form, Loader } from './index'
+import { Toaster, toast } from "react-hot-toast"
 import "./style.css"
 export const ComentsPage = () => {
 
@@ -15,9 +14,9 @@ export const ComentsPage = () => {
     const { getComentsQuery } = apisMutation(),
         { data, isError, isLoading } = getComentsQuery
 
-    const Toast = () => { 
+    const Toast = () => {
         toast.success("Comentario creado")
-     }
+    }
     return (
         <section className='g-maxwidth '>
             <Header>
@@ -36,7 +35,7 @@ export const ComentsPage = () => {
                         paddingTop: "2rem",
                         height: "60vh"
                     }}>
-                        <Loader/>
+                        <Loader />
                     </div>
                     : ""
             }

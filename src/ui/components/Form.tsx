@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./style.css"
-import { CommentsType } from '@/core/interfaces/coments'
 import { apisMutation } from '@/infrastructure/api/apis-mutations'
 export const Form = ({setForm, form, Toast}: {setForm: any, form: boolean, Toast: any}) => {
 
