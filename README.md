@@ -43,7 +43,7 @@
 │    ├── /rousable             # Layouts de la app
 │    │    ├── componentes reutilizables
 │    └── /styles             
-│          |-- estilos de styled components
+│          ├── estilos de styled components
 ├── package.json
 ├── tsconfig.json
 ├── .eslintrc.json
