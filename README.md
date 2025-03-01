@@ -3,7 +3,7 @@
 # Tecnologias: [![My Skills](https://skillicons.dev/icons?i=typescript,next,styledcomponents,css)](https://skillicons.dev)
 ## + Zustand
 
-#*Pasos para bajar proyecto y ejecutarlo*
+# -Pasos para bajar proyecto y ejecutarlo-
 
 ## npm install
 ## abre doble terminal para la app y la fake api
